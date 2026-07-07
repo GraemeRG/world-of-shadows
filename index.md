@@ -3,23 +3,19 @@ layout: default
 title: Home
 ---
 
-<h1>Welcome to the Shadows</h1>
+<h1>We are the Shadows beneath Neon lights</h1>
 
 <p>
-  This is a quiet corner of the web for projects built in spare hours and
-  thoughts set down before they fade — homebrew games, mobile experiments,
-  and whatever else has been worth lingering over by candlelight.
+  Welcome to the world of the shadows. This is my little corner of the internet, a showcase for projects anchored in my own little universe, Shadows Beneath Neon Lights.
 </p>
 
 <p>
-  Wander through the <a href="{{ '/projects.html' | relative_url }}">Projects</a>
-  for a look at what's been built, or settle into the
-  <a href="{{ '/blog.html' | relative_url }}">Writings</a> for longer thoughts.
+  When I have them I'll be updating any released <a href="{{ '/projects.html' | relative_url }}">Projects</a> here
+  and writing some less... strucutred... content 
+  <a href="{{ '/blog.html' | relative_url }}">here</a>.
 </p>
 
-<span class="ornament">&#10086; &#10087; &#10086;</span>
-
-<h2>Recently Stirring</h2>
+<h2>Recent posts</h2>
 <ul class="entry-list">
   {% assign recent = site.posts | concat: site.projects | sort: 'date' | reverse %}
   {% for item in recent limit: 4 %}

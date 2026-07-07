@@ -6,9 +6,10 @@ baseurl: "/world-of-shadows"
 author: Graeme
 
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title/
 
 collections:
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
   projects:
     output: true
     permalink: /projects/:path/

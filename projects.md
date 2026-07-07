@@ -6,7 +6,8 @@ title: Projects
 <h1>Projects</h1>
 
 <ul class="entry-list">
-  {% for project in site.projects | sort: 'date' | reverse %}
+  {% assign projects = site.projects | sort: 'date' | reverse %}
+  {% for project in projects %}
   <li>
     <h2 class="entry-title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
     {% if project.tagline %}<p class="entry-excerpt">{{ project.tagline }}</p>{% endif %}
