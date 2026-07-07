@@ -2,7 +2,7 @@
 title: "Neon Rose"
 date: 2026-06-01
 tagline: "A proof of concept game for the Nintendo GameBoy"
-stack: ["Kotlin", "Jetpack Compose", "MVVM", "StateFlow"]
+stack: ["GameBoy", "RPG", "Game"]
 links:
   - label: "Source"
     url: "https://graemerg.itch.io/neon-rose"

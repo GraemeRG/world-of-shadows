@@ -1,16 +1,9 @@
 ---
-title: "First Light in the Dark"
+title: "Shadows pooling underneath"
 date: 2026-06-30
-tags: [meta, beginnings]
-excerpt: "A short note on why this site exists, and what's to come."
+tags: [fresh starts]
+excerpt: "Why I wanted this site exists, and what's to come."
 ---
 
-Every project needs a beginning, however modest. This is mine — a place to
-keep the things built quietly outside of work: homebrew experiments for
-the Sega Mega Drive, mobile apps tinkered with on evenings and weekends,
-and the occasional thought worth writing down properly rather than letting
-it dissolve.
-
-There's no grand plan here beyond honesty about the work — what worked,
-what didn't, and what's still half-finished in a folder somewhere. More to
-come.
+All the best stories begin in a tavern. This one begins on a train...
+Some time in 2017 I wrote the words "D&D on a train", and what that's lead to is 9 years of
