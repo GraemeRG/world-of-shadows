@@ -152,7 +152,7 @@ p {
   margin: 1.1em 0;
 }
 
-p:first-of-type::first-letter {
+main p:first-of-type::first-letter {
   font-family: var(--font-display);
   font-size: 3.4rem;
   float: left;
