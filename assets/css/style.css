@@ -1,0 +1,314 @@
+/* ==========================================================================
+   World of Shadows — Gothic Victorian Theme
+   ========================================================================== */
+
+:root {
+  --ink-black: #0e0c0d;
+  --charcoal: #1a1715;
+  --charcoal-light: #241f1d;
+  --parchment-dark: #2b2522;
+  --bone: #d8cdb8;
+  --bone-dim: #a89b86;
+  --candle-amber: #c98a3d;
+  --candle-glow: #e8a94f;
+  --blood: #6b1f24;
+  --blood-bright: #8c2a2f;
+  --iron: #4a4540;
+
+  --font-display: 'Cinzel Decorative', 'Playfair Display', Georgia, serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
+
+  --max-width: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--ink-black);
+  background-image:
+    radial-gradient(ellipse at top, rgba(201, 138, 61, 0.05) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom, rgba(107, 31, 36, 0.06) 0%, transparent 60%);
+  color: var(--bone);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.7;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* subtle vignette overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.55) 100%);
+  z-index: 1;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------------- Header ---------------- */
+
+.site-header {
+  text-align: center;
+  padding: 70px 24px 40px;
+  border-bottom: 1px solid var(--iron);
+  margin-bottom: 0;
+}
+
+.site-title {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  letter-spacing: 0.06em;
+  color: var(--candle-glow);
+  text-shadow: 0 0 18px rgba(232, 169, 79, 0.35), 0 0 2px rgba(0,0,0,0.8);
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.site-tagline {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: var(--bone-dim);
+  font-size: 1.05rem;
+  margin: 0 0 26px;
+  letter-spacing: 0.02em;
+}
+
+.ornament {
+  display: block;
+  text-align: center;
+  color: var(--blood-bright);
+  font-size: 1.1rem;
+  letter-spacing: 0.4em;
+  margin: 18px 0;
+  opacity: 0.8;
+}
+
+.site-nav {
+  margin-top: 22px;
+}
+
+.site-nav a {
+  font-family: var(--font-heading);
+  color: var(--bone-dim);
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
+  padding-bottom: 4px;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--candle-glow);
+  border-color: var(--candle-amber);
+}
+
+/* ---------------- Main content ---------------- */
+
+main {
+  padding: 56px 0 80px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--bone);
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 2.1rem;
+  color: var(--candle-glow);
+  border-bottom: 1px solid var(--iron);
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.4em;
+}
+
+p {
+  margin: 1.1em 0;
+}
+
+p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  float: left;
+  line-height: 0.8;
+  padding: 0.05em 0.08em 0 0;
+  color: var(--candle-glow);
+  text-shadow: 0 0 10px rgba(232, 169, 79, 0.3);
+}
+
+a {
+  color: var(--candle-amber);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 138, 61, 0.4);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+  color: var(--candle-glow);
+  border-color: var(--candle-glow);
+}
+
+blockquote {
+  border-left: 3px solid var(--blood);
+  margin: 1.6em 0;
+  padding: 0.4em 0 0.4em 1.4em;
+  color: var(--bone-dim);
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--iron);
+  margin: 3em 0;
+}
+
+img {
+  max-width: 100%;
+  border: 1px solid var(--iron);
+  padding: 6px;
+  background: var(--charcoal-light);
+}
+
+code, pre {
+  background: var(--charcoal-light);
+  border: 1px solid var(--iron);
+  color: var(--bone-dim);
+  font-family: 'Courier New', monospace;
+  border-radius: 2px;
+}
+
+pre {
+  padding: 14px;
+  overflow-x: auto;
+}
+
+code {
+  padding: 2px 5px;
+}
+
+/* ---------------- Listings (blog / projects) ---------------- */
+
+.entry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entry-list li {
+  border-bottom: 1px solid var(--iron);
+  padding: 22px 0;
+}
+
+.entry-list li:last-child {
+  border-bottom: none;
+}
+
+.entry-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  margin: 0 0 6px;
+}
+
+.entry-title a {
+  border-bottom: none;
+  color: var(--bone);
+}
+
+.entry-title a:hover {
+  color: var(--candle-glow);
+}
+
+.entry-meta {
+  color: var(--bone-dim);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.entry-excerpt {
+  color: var(--bone-dim);
+  font-size: 0.98rem;
+}
+
+.tag {
+  display: inline-block;
+  border: 1px solid var(--blood);
+  color: var(--blood-bright);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  margin: 0 6px 6px 0;
+  border-radius: 2px;
+}
+
+/* ---------------- Project card extras ---------------- */
+
+.project-meta {
+  color: var(--bone-dim);
+  font-style: italic;
+  margin-bottom: 1.8em;
+}
+
+.project-stack span {
+  display: inline-block;
+  background: var(--charcoal-light);
+  border: 1px solid var(--iron);
+  color: var(--bone-dim);
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  margin: 0 6px 6px 0;
+  border-radius: 2px;
+  letter-spacing: 0.03em;
+}
+
+/* ---------------- Footer ---------------- */
+
+.site-footer {
+  text-align: center;
+  padding: 40px 24px 60px;
+  border-top: 1px solid var(--iron);
+  color: var(--bone-dim);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+.site-footer .ornament {
+  margin-bottom: 14px;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 600px) {
+  body { font-size: 16.5px; }
+  .site-title { font-size: 2rem; }
+  .site-nav a { margin: 0 10px; font-size: 0.85rem; }
+  h1 { font-size: 1.7rem; }
+}

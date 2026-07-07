@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% if page.tagline %}<p class="project-meta">{{ page.tagline }}</p>{% endif %}
+
+  {% if page.stack %}
+  <div class="project-stack">
+    {% for item in page.stack %}<span>{{ item }}</span>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if page.links %}
+  <p>
+    {% for link in page.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% unless forloop.last %} &middot; {% endunless %}
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  {{ content }}
+</article>
+
+<hr>
+<p><a href="{{ '/projects.html' | relative_url }}">&larr; Back to all projects</a></p>

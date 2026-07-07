@@ -1,0 +1,38 @@
+title: World of Shadows
+description: Project showcase and writings
+url: "https://graemerg.github.io"
+baseurl: "/world-of-shadows"
+
+author: Graeme
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
